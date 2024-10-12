@@ -1,0 +1,47 @@
+<html>
+<head>
+<title>operacoes.cpp</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #7a7e85;}
+.s1 { color: #bcbec4;}
+.s2 { color: #b3ae60;}
+.s3 { color: #6aab73;}
+.s4 { color: #cf8e6d;}
+.s5 { color: #bcbec4;}
+.s6 { color: #2aacb8;}
+</style>
+</head>
+<body bgcolor="#1e1f22">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+operacoes.cpp</font>
+</center></td></tr></table>
+<pre><span class="s0">//</span>
+<span class="s0">// Created by Maria Clara Seixa Scheffel on 07/10/24.</span>
+<span class="s0">//</span>
+<span class="s2">#include </span><span class="s3">&quot;operacoes.h&quot;</span>
+<span class="s2">#include </span><span class="s3">&lt;stdexcept&gt;</span>
+
+<span class="s4">double </span><span class="s1">soma</span><span class="s5">(</span><span class="s4">double </span><span class="s1">a</span><span class="s5">, </span><span class="s4">double </span><span class="s1">b</span><span class="s5">) {</span>
+    <span class="s4">return </span><span class="s1">a </span><span class="s5">+ </span><span class="s1">b</span><span class="s5">;</span>
+<span class="s5">}</span>
+
+<span class="s4">double </span><span class="s1">subtracao</span><span class="s5">(</span><span class="s4">double </span><span class="s1">a</span><span class="s5">, </span><span class="s4">double </span><span class="s1">b</span><span class="s5">) {</span>
+    <span class="s4">return </span><span class="s1">a </span><span class="s5">- </span><span class="s1">b</span><span class="s5">;</span>
+<span class="s5">}</span>
+
+<span class="s4">double </span><span class="s1">multiplicacao</span><span class="s5">(</span><span class="s4">double </span><span class="s1">a</span><span class="s5">, </span><span class="s4">double </span><span class="s1">b</span><span class="s5">) {</span>
+    <span class="s4">return </span><span class="s1">a </span><span class="s5">* </span><span class="s1">b</span><span class="s5">;</span>
+<span class="s5">}</span>
+
+<span class="s4">double </span><span class="s1">divisao</span><span class="s5">(</span><span class="s4">double </span><span class="s1">a</span><span class="s5">, </span><span class="s4">double </span><span class="s1">b</span><span class="s5">) {</span>
+    <span class="s4">if </span><span class="s5">(</span><span class="s1">b </span><span class="s5">!= </span><span class="s6">0</span><span class="s5">) {</span>
+        <span class="s4">return </span><span class="s1">a </span><span class="s5">/ </span><span class="s1">b</span><span class="s5">;</span>
+    <span class="s5">} </span><span class="s4">else </span><span class="s5">{</span>
+        <span class="s4">throw </span><span class="s1">std::invalid_argument</span><span class="s5">(</span><span class="s3">&quot;Divisão por zero!&quot;</span><span class="s5">);</span>
+    <span class="s5">}</span>
+<span class="s5">}</span></pre>
+</body>
+</html>

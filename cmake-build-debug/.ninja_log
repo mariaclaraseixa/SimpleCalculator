@@ -1,0 +1,7 @@
+# ninja log v6
+1	418	1728334960005484027	CMakeFiles/untitled4.dir/main.cpp.o	60bfc4374adc618b
+2	420	1728334960006612816	CMakeFiles/untitled4.dir/EntradaSaida.cpp.o	f40dae10a944e8e1
+8	164	1728335063711553761	CMakeFiles/untitled4.dir/operacoes.cpp.o	19a29539fedf371
+164	209	1728335063867428692	untitled4	5c05b4b31e50ab16
+6	265	1728350761658849367	CMakeFiles/untitled4.dir/operacoes.cpp.o	19a29539fedf371
+265	317	1728350761917402108	untitled4	5c05b4b31e50ab16

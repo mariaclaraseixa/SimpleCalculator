@@ -1,0 +1,65 @@
+<html>
+<head>
+<title>EntradaSaida.cpp</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #7a7e85;}
+.s1 { color: #bcbec4;}
+.s2 { color: #b3ae60;}
+.s3 { color: #6aab73;}
+.s4 { color: #cf8e6d;}
+.s5 { color: #bcbec4;}
+.s6 { color: #2aacb8;}
+</style>
+</head>
+<body bgcolor="#1e1f22">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+EntradaSaida.cpp</font>
+</center></td></tr></table>
+<pre><span class="s0">//</span>
+<span class="s0">// Created by Maria Clara Seixa Scheffel on 07/10/24.</span>
+<span class="s0">//</span>
+<span class="s2">#include </span><span class="s3">&quot;EntradaSaida.h&quot;</span>
+
+<span class="s4">double </span><span class="s1">solicNumero</span><span class="s5">(</span><span class="s4">const </span><span class="s1">string</span><span class="s5">&amp; </span><span class="s1">ordem</span><span class="s5">) {</span>
+    <span class="s4">double </span><span class="s1">num</span><span class="s5">;</span>
+    <span class="s1">cout </span><span class="s5">&lt;&lt; </span><span class="s3">&quot;Informe o &quot; </span><span class="s5">&lt;&lt; </span><span class="s1">ordem </span><span class="s5">&lt;&lt; </span><span class="s3">&quot; número: &quot;</span><span class="s5">;</span>
+    <span class="s1">cin </span><span class="s5">&gt;&gt; </span><span class="s1">num</span><span class="s5">;</span>
+    <span class="s4">return </span><span class="s1">num</span><span class="s5">;</span>
+<span class="s5">}</span>
+
+<span class="s4">int </span><span class="s1">solicOperacao</span><span class="s5">() {</span>
+    <span class="s4">int </span><span class="s1">operacao</span><span class="s5">;</span>
+    <span class="s1">cout </span><span class="s5">&lt;&lt; </span><span class="s3">&quot;Escolha uma operação: &quot; </span><span class="s5">&lt;&lt; </span><span class="s1">endl</span><span class="s5">;</span>
+    <span class="s1">cout </span><span class="s5">&lt;&lt; </span><span class="s3">&quot;1. Soma&quot; </span><span class="s5">&lt;&lt; </span><span class="s1">endl</span><span class="s5">;</span>
+    <span class="s1">cout </span><span class="s5">&lt;&lt; </span><span class="s3">&quot;2. Subtração&quot; </span><span class="s5">&lt;&lt; </span><span class="s1">endl</span><span class="s5">;</span>
+    <span class="s1">cout </span><span class="s5">&lt;&lt; </span><span class="s3">&quot;3. Multiplicação&quot; </span><span class="s5">&lt;&lt; </span><span class="s1">endl</span><span class="s5">;</span>
+    <span class="s1">cout </span><span class="s5">&lt;&lt; </span><span class="s3">&quot;4. Divisão&quot; </span><span class="s5">&lt;&lt; </span><span class="s1">endl</span><span class="s5">;</span>
+    <span class="s1">cout </span><span class="s5">&lt;&lt; </span><span class="s3">&quot;5. Sair&quot; </span><span class="s5">&lt;&lt; </span><span class="s1">endl</span><span class="s5">;</span>
+    <span class="s1">cout </span><span class="s5">&lt;&lt; </span><span class="s3">&quot;Digite sua opção: &quot;</span><span class="s5">;</span>
+    <span class="s1">cin </span><span class="s5">&gt;&gt; </span><span class="s1">operacao</span><span class="s5">;</span>
+    <span class="s4">return </span><span class="s1">operacao</span><span class="s5">;</span>
+<span class="s5">}</span>
+
+<span class="s4">void </span><span class="s1">mostrarResultado</span><span class="s5">(</span><span class="s4">const double</span><span class="s5">&amp; </span><span class="s1">resultado</span><span class="s5">, </span><span class="s4">const int</span><span class="s5">&amp; </span><span class="s1">operacao</span><span class="s5">) {</span>
+    <span class="s1">string operacaoTxt</span><span class="s5">;</span>
+    <span class="s4">switch </span><span class="s5">(</span><span class="s1">operacao</span><span class="s5">) {</span>
+        <span class="s4">case </span><span class="s6">1</span><span class="s1">:</span>
+            <span class="s1">operacaoTxt </span><span class="s5">= </span><span class="s3">&quot;soma&quot;</span><span class="s5">;</span>
+        <span class="s4">break</span><span class="s5">;</span>
+        <span class="s4">case </span><span class="s6">2</span><span class="s1">:</span>
+            <span class="s1">operacaoTxt </span><span class="s5">= </span><span class="s3">&quot;subtração&quot;</span><span class="s5">;</span>
+        <span class="s4">break</span><span class="s5">;</span>
+        <span class="s4">case </span><span class="s6">3</span><span class="s1">:</span>
+            <span class="s1">operacaoTxt </span><span class="s5">= </span><span class="s3">&quot;multiplicação&quot;</span><span class="s5">;</span>
+        <span class="s4">break</span><span class="s5">;</span>
+        <span class="s4">case </span><span class="s6">4</span><span class="s1">:</span>
+            <span class="s1">operacaoTxt </span><span class="s5">= </span><span class="s3">&quot;divisão&quot;</span><span class="s5">;</span>
+        <span class="s4">break</span><span class="s5">;</span>
+    <span class="s5">}</span>
+    <span class="s1">cout </span><span class="s5">&lt;&lt; </span><span class="s3">&quot;O resultado da &quot; </span><span class="s5">&lt;&lt; </span><span class="s1">operacaoTxt </span><span class="s5">&lt;&lt; </span><span class="s3">&quot; é: &quot; </span><span class="s5">&lt;&lt; </span><span class="s1">resultado </span><span class="s5">&lt;&lt; </span><span class="s1">endl</span><span class="s5">;</span>
+<span class="s5">}</span></pre>
+</body>
+</html>
